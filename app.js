@@ -17,10 +17,16 @@ const upload = multer({storage: storage});
 
 // Create MySQL connection
 const connection = mysql.createConnection({
-host: 'localhost',
-user: 'root',
-password: '',
-database: 'mycagpharm'
+// host: 'localhost',
+// user: 'root',
+// password: '',
+// database: 'mycagpharm'
+
+    host: "db4free.net",
+    user: 'msyahmiarman',
+    password: 'Codingiscoding',
+    database: 'c237cag2'
+
 });
 connection.connect((err) => {
 if (err) {
